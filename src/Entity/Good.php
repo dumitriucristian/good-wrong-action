@@ -37,4 +37,15 @@ class Good
 
         return $this;
     }
+
+    public function update( $request)
+    {
+        $data = $request->request->get('form');
+        $this->setItem($data['item']);
+    }
+
+    public function remove()
+    {
+
+    }
 }
